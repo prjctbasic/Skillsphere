@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirasi Terus</title>
+    <nav>
+        <div class="logo">
+            <img src="logo.jpeg" alt="SkillSphere">
+            <h1>SkillSphere</h1>
+        
+        <style>
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+            .logo h1 {
+                margin-left: 10px;
+            }
+        </style>
+        </div>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#populer">Populer</a></li>
+            <li><a href="#kategori">Kategori</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#masuk">Masuk</a></li>
+            <li><a href="#daftar">Daftar</a></li>
+        </ul>
+    <style>
+        nav {
+            background-color: #d35400;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        .logo h1 {
+            margin-left: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 10px;
+        }
+        nav ul li a {
+            color: rgb(17, 17, 17);
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #ffffff;
+        }
+
+        /* Style untuk hamburger menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: rgb(253, 253, 253);
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+
+        /* Responsif untuk tablet dan mobile */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                display: none;
+            }
+            nav ul li {
+                text-align: center;
+                width: 100%;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script>
+        // Javascript untuk toggle hamburger menu
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').style.display = document.querySelector('nav ul').style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+    </nav>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bcbcbc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
+        h1, h2 {
+            color: #000000;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section id="kursus">
+            <h2>Beranda</h2>
+            <div class="card">
+                    <section class="hero">
+                        <div class="hero-content">
+                            <h2>Pembelajaran Gratis</h2>
+                            <p>Ikuti Pembelajaran GRATIS oleh SKILLSPHERE dengan berbagai kategori. Pelatihan ini berbasis online yang bisa kamu pilih sesuai dengan kebutuhan dan keinginanmu.</p>
+                        </div>
+                        <img src="Logo 2.jpeg" alt="Pembelajaran Gratis">
+                    </section>
+                    <section class="popular-courses">
+                        <h2>Pembelajaran Populer</h2>
+                        <div class="course-card">
+                            <img src="matematika.jpeg" alt="Matematika">
+                            <h3>Matematika</h3>
+                            <a href="#">Ikuti Pembelajaran</a>
+                        </div>
+                        <div class="course-card">
+                            <img src="kimia.jpeg" alt="Kimia">
+                            <h3>Kimia</h3>
+                            <a href="#">Ikuti Pembelajaran</a>
+                        </div>
+                        <div class="course-card">
+                            <img src="fisika.jpeg" alt="Fisika">
+                            <h3>Fisika</h3>
+                            <a href="#">Ikuti Pembelajaran</a>
+                        </div>
+                        <div class="course-card">
+                            <img src="biologi.jpeg" alt="Biologi">
+                            <h3>Biologi</h3>
+                            <a href="#">Ikuti Pembelajaran</a>
+                        </div>
+                    </section>
+                    <section class="cta">
+                        <h2>Tertarik untuk belajar online bersama SKILLSPHERE?</h2>
+                        <p>Mari belajar bersama sebagai pembelajaran online di SKILLSPHERE dan membangun generasi bangsa.</p>
+                        <a href="#" class="cta-btn">Daftar Sekarang</a>
+                        <a href="#" class="cta-btn">Pelajari Lebih Lanjut</a>
+            </div>
+            <style>
+
+header {
+    background-color: #d35400;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    -left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f39c12;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.popular-courses {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-courses h2 {
+    margin-bottom: 20px;
+}
+
+.course-card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.course-card h3 {
+    margin: 10px 0;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #d35400;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    height: 20px;
+    -left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f39c12;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.popular-courses {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-courses h2 {
+    margin-bottom: 20px;
+}
+
+.course-card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.course-card h3 {
+    margin: 10px 0;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #d35400;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    height: 20px;
+    -left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f39c12;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.popular-courses {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-courses h2 {
+    margin-bottom: 20px;
+}
+
+.course-card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.course-card h3 {
+    margin: 10px 0;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #d35400;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    height: 20px;
+    -left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f39c12;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.popular-courses {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-courses h2 {
+    margin-bottom: 20px;
+}
+
+.course-card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.course-card h3 {
+    margin: 10px 0;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #d35400;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    height: 20px;
+}
+            </style>
+        </section>
+        <section id="kursus">
+            <h2>Populer</h2>
+            <div class="card">
+                <h2>Desain Grafis</h2>
+                <p>Pelajari desain grafis dari dasar hingga mahir dengan menggunakan software terkini di industri.</p>
+            </div>
+            <div class="card">
+                <h2>Kategori</h2>
+                <p>Kembangkan kemampuan membuat website yang responsif dan interaktif menggunakan HTML, CSS, dan JavaScript.</p>
+            </div>
+        </section>
+        <section id="lokasi">
+            <h2>Tentang Kami</h2>
+            <p>Kami menyediakan beberapa lokasi pelatihan di kota besar di Indonesia, termasuk Jakarta, Bandung, dan Surabaya.</p>
+        </section>
+    </div>
+    <!-- Tambahkan ini di dalam <body> setelah <div class="container"> -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="/submit-login" method="post">
+                <label for="username">Nama Pengguna:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Masuk</button>
+            </form>
+            <p class="modal-footer">Belum memiliki akun? <a href="#Daftar" id="linkToRegister" onclick="showRegisterModal()">Daftar</a></p>
+            <p class="modal-footer"><a href="#LupaSandi" onclick="forgotPasswordBtn.onclick()">Lupa Sandi</a></p>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="/submit-register" method="post">
+                <label for="fullname">Nama Lengkap:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <label for="username">Nama Pengguna:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm_password">Konfirmasi Kata Sandi:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                
+                <div class="form-section">
+                    <label for="gender">Jenis Kelamin:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+                </div>
+                <div class="form-section">
+                    <label for="phone">No Telepon:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                
+                <button type="submit">Daftar</button>
+            </form>
+            <p class="modal-footer">Sudah memiliki akun? <a href="#masuk" id="linkToLogin" onclick="showLoginModal()">Masuk</a></p>
+        </div>
+    </div>
+
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="forgotPasswordForm">
+                <label for="phone">No Telepon:</label>
+                <input type="text" id="phone" name="phone" required>
+                <button type="button" onclick="requestVerificationCode()">Kirim Kode Verifikasi</button>
+            </form>
+            <form id="verifyCodeForm" style="display:none;">
+                <label for="verificationCode">Kode Verifikasi:</label>
+                <input type="text" id="verificationCode" name="verificationCode" required>
+                <button type="button" onclick="verifyCode()">Verifikasi Kode</button>
+            </form>
+            <form id="resetPasswordForm" style="display:none;">
+                <label for="newPassword">Kata Sandi Baru:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <label for="confirmNewPassword">Konfirmasi Kata Sandi:</label>
+                <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+                <button type="submit">Perbarui Sandi</button>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto; /* Posisi lebih ke tengah secara vertikal */
+            padding: 20px; /* Padding yang lebih kecil untuk estetika */
+            border-radius: 8px; /* Tambahkan border-radius untuk tampilan yang lebih modern */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Tambahkan shadow untuk efek 3D ringan */
+            width: 80%; /* Lebar modal yang lebih kecil */
+            max-width: 350px; /* Maksimal lebar yang lebih kecil */
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%; /* Lebar penuh */
+            padding: 4px; /* Padding yang lebih kecil */
+            margin-top: 4px; /* Margin atas yang lebih kecil */
+            margin-bottom: 5px; /* Margin bawah yang lebih kecil */
+            display: inline-block;
+            border: 1px solid #ccc; /* Border sederhana */
+            box-sizing: border-box; /* Box sizing untuk menghindari overflow */
+            border-radius: 4px; /* Tambahkan border-radius */
+        }
+        label {
+            display: block;
+            margin-bottom: 2px; /* Margin bawah yang lebih kecil */
+            font-size: 12px; /* Ukuran font yang lebih kecil */
+        }
+        .form-section {
+            margin-top: 2px; /* Margin atas yang lebih kecil */
+        }
+        button {
+            background-color: #4CAF50; /* Warna background tombol */
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            width: 100%;
+            border-radius: 4px; /* Tambahkan border-radius */
+        }
+        button:hover {
+            opacity: 0.5; /* Efek hover */
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+        }
+        .modal-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+    <style>
+        .learn-more-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.8s ease;
+        }
+        .learn-more-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <script>
+        // JavaScript untuk modal Masuk
+        var loginModal = document.getElementById('loginModal');
+        var loginBtn = document.querySelector('nav ul li a[href="#masuk"]');
+        var closeLogin = document.getElementsByClassName("close")[0];
+
+        loginBtn.onclick = function() {
+            loginModal.style.display = "block";
+        }
+
+        closeLogin.onclick = function() {
+            loginModal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == loginModal) {
+                loginModal.style.display = "none";
+            }
+        }
+
+        // JavaScript untuk modal Daftar
+        var registerModal = document.getElementById('registerModal');
+        var registerBtn = document.querySelector('nav ul li a[href="#daftar"]');
+        var closeRegister = document.getElementsByClassName("close")[1];
+
+        registerBtn.onclick = function() {
+            registerModal.style.display = "block";
+        }
+
+        closeRegister.onclick = function() {
+            registerModal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == registerModal) {
+                registerModal.style.display = "none";
+            }
+        }
+
+        var forgotPasswordModal = document.getElementById('forgotPasswordModal');
+        var forgotPasswordBtn = document.querySelector('.modal-footer a[href="#LupaSandi"]');
+        var closeForgotPassword = document.getElementsByClassName("close")[2]; // Sesuaikan indeks dengan jumlah modal yang ada
+
+        forgotPasswordBtn.onclick = function() {
+            forgotPasswordModal.style.display = "block";
+        }
+
+        closeForgotPassword.onclick = function() {
+            forgotPasswordModal.style.display = "none";
+        }
+
+        function requestVerificationCode() {
+            // Implementasi pengiriman kode verifikasi
+            document.getElementById('forgotPasswordForm').style.display = 'none';
+            document.getElementById('verifyCodeForm').style.display = 'block';
+        }
+
+        function verifyCode() {
+            // Implementasi verifikasi kode
+            document.getElementById('verifyCodeForm').style.display = 'none';
+            document.getElementById('resetPasswordForm').style.display = 'block';
+        }
+
+        document.getElementById('resetPasswordForm').onsubmit = function(event) {
+            event.preventDefault();
+            // Implementasi reset sandi
+            alert('Sandi diperbaharui');
+            forgotPasswordModal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == forgotPasswordModal) {
+                forgotPasswordModal.style.display = "none";
+            }
+        }
+
+        // Fungsi untuk menampilkan modal Daftar
+        function showRegisterModal() {
+            // Tutup modal Masuk terlebih dahulu
+            loginModal.style.display = "none";
+            // Tampilkan modal Daftar
+            registerModal.style.display = "block";
+        }
+
+        // Dapatkan elemen link ke modal Daftar dan tambahkan event listener
+        document.getElementById('linkToRegister').addEventListener('click', function(event) {
+            event.preventDefault(); // Mencegah navigasi default
+            showRegisterModal(); // Panggil fungsi untuk menampilkan modal Daftar
+        });
+
+        // Fungsi untuk menampilkan modal Masuk
+        function showLoginModal() {
+            // Tutup modal Daftar terlebih dahulu
+            registerModal.style.display = "none";
+            // Tampilkan modal Masuk
+            loginModal.style.display = "block";
+        }
+
+        // Dapatkan elemen link ke modal Masuk dan tambahkan event listener
+        document.getElementById('linkToLogin').addEventListener('click', function(event) {
+            event.preventDefault(); // Mencegah navigasi default
+            showLoginModal(); // Panggil fungsi untuk menampilkan modal Masuk
+        });
+
+        // JavaScript untuk konfirmasi dan konten tambahan di "Pelajari Lebih Lanjut"
+        var learnMoreBtn = document.querySelector('.learn-more-btn');
+        var confirmModal = document.getElementById('confirmModal');
+        var yesBtn = document.getElementById('yesBtn');
+        var noBtn = document.getElementById('noBtn');
+        var additionalContent = document.getElementById('additionalContent');
+
+        learnMoreBtn.onclick = function() {
+            confirmModal.style.display = "block";
+        }
+
+        yesBtn.onclick = function() {
+            confirmModal.style.display = "none";
+            additionalContent.style.display = "block";
+        }
+
+        noBtn.onclick = function() {
+            confirmModal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == confirmModal || event.target == additionalContent) {
+                confirmModal.style.display = "none";
+                additionalContent.style.display = "none";
+            }
+        }
+    </script>
+    <footer>
+        <p>&copy; 2023 SkillSphere. Hak cipta dilindungi.</p>
+        <div class="social-media">
+            <a href="#"><img src="youtube.jpeg" alt="YouTube"></a>
+            <a href="#"><img src="instagram.jpeg" alt="Instagram"></a>
+            <a href="#"><img src="tiktok.jpeg" alt="TikTok"></a>
+        </div>
+    </footer>
+    <style>
+        footer {
+            position: flex;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #d35400; /* Warna sama seperti navbar */
+            z-index: 1000; /* Pastikan footer tetap di atas konten lain */
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Bayangan untuk efek 3D ringan */
+            text-align: center; /* Teks di tengah */
+            padding: 2px; /* Padding atas dan bawah */
+            display: flex;
+            justify-content: center; /* Menyelaraskan item di tengah secara horizontal */
+            align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+        }
+        body {
+            padding-bottom: 50px; /* Sesuaikan dengan tinggi footer */
+        }
+    </style>
+</body>
+</html>
+
